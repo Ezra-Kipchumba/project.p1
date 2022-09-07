@@ -1,5 +1,5 @@
 .top-h {
-    color: cyan;
+    color: rgb(12, 21, 21);
     font-size: 32px;
     margin-left: 50px;
     margin: 50px;
@@ -36,6 +36,11 @@ a {
 
 a:hover {
     background-size: 0 3px, 100% 3px;
+}
+#dog{
+    font-size: 35;
+    color: black;
+    font-weight: 700;
 }
 .butt {
     float: right;
