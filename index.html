@@ -44,6 +44,48 @@
     <hr>-->
         <div class="accordion" id="output"></div>
     </div>
+    <div class="form">
+        <h3 id="mail">Email us</h3>
+        <form action="fillform" onsubmit="return false;">
+            <div class="labels">
+                <div>
+                    <label for="name">Name</label>
+                </div>
+                <div>
+                    <input type="text" id="fullname" placeholder="Enter your name.." required>
+                </div>
+            </div>
+            <div class="labels">
+                <div>
+                    <label for="name">Email Address</label>
+                </div>
+                <div>
+                    <input type="text" id="fullname" placeholder="Enter your email.." required>
+                </div>
+            </div>
+            <div class="labels">
+                <div>
+                    <label for="name">Phone Number</label>
+                </div>
+                <div>
+                    <input type="number" id="fullname" placeholder="Enter phone number.." required>
+                </div>
+            </div>
+            <div class="labels">
+                <div>
+                    <label for="name">Message</label>
+                </div>
+                <div>
+                    <textarea type="text" id="usermessage" placeholder="write message"
+                        style="height: 200px; width: 500;"></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="submit" id="btn" onclick="theSend();" value="submit">
+            </div>
+        </form>
+    </div>
+</div>
 
     <!-- footer -->
 <footer class="footer">
