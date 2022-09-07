@@ -1,12 +1,15 @@
 body {
     overflow: auto;
+    background-color: rgb(94, 122, 122);
 }
 
 .top-h {
     color: rgb(12, 21, 21);
-    font-size: 32px;
+    /* font-size: 48px; */
     margin-left: 50px;
-    margin: 50px;
+    margin-top: 50px;
+    /* margin-bottom: 2px; */
+    /* font-weight: 700; */
 }
 
 .nav {
@@ -49,7 +52,8 @@ a:hover {
 }
 
 .butt {
-    float: right;
+    /* float: right; */
+    display: flex;
     right: 0%;
     margin-top: 15px;
     margin-right: 30px;
@@ -78,29 +82,30 @@ a:hover {
 }
 
 #output {
-    margin: 30px 0px 0px 30px;
+    margin: 10px 0px 0px 10px;
 }
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
 
     #output {
         display: flex;
         width: 90%;
         flex-wrap: wrap;
-        align-items: center;
+        /* align-items: center; */
         justify-content: space-around;
     }
 
     #div1 {
         height: 100%;
-        width: 30%;
+        width: 40%;
     }
 
     #div1 #ullist {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        justify-content: space-around
         ;
     }
 
