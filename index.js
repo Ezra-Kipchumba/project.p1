@@ -21,8 +21,8 @@ function newbreed(i) {
                 new_div.appendChild(ulist)
                 let image = document.createElement("img")
                 image.setAttribute("src", data[i].image["url"])
-                image.setAttribute("height", "200px")
-                image.setAttribute("width", "200px")
+                image.setAttribute("height", "400px")
+                image.setAttribute("width", "400px")
                 new_div.appendChild(image)
                 let item = document.createElement("li")
                 item.innerText = data[i].name;
