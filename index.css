@@ -1,3 +1,7 @@
+body {
+    overflow: auto;
+}
+
 .top-h {
     color: rgb(12, 21, 21);
     font-size: 32px;
@@ -9,7 +13,7 @@
     display: flex;
     width: 95%;
     justify-content: space-around;
-    color: aliceblue;
+    color: black;
     font-size: 28px;
     font-weight: 600;
     margin-top: 30px;
@@ -37,11 +41,13 @@ a {
 a:hover {
     background-size: 0 3px, 100% 3px;
 }
-#dog{
+
+#dog {
     font-size: 35;
     color: black;
     font-weight: 700;
 }
+
 .butt {
     float: right;
     right: 0%;
@@ -50,6 +56,25 @@ a:hover {
     background-color: black;
     color: white;
     margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 22px;
+    font-size: 26px;
+    margin-left: 20%;
+    background-color: rgb(10, 83, 143);
+    font-weight: 700;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    text-align: center;
+    /* padding: 20px; */
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+
 }
 
 #output {
