@@ -1,3 +1,10 @@
+function theSend(){
+    const person = document.getElementById("fullname").value;
+
+    alert ("Thank You," + person + "We're delighted to have you on board");
+
+}
+
 function newbreed(i) {
     const output = document.getElementById('output')
     let req = new XMLHttpRequest();
@@ -86,10 +93,3 @@ button.addEventListener("click", function (e) {
     i = i + 10;
     console.log("success");
 });
-
-function theSend(){
-    const person = document.getElementById("fullname").value;
-
-    alert ("Thank You," + person + "We're delighted to have you on board");
-
-}
