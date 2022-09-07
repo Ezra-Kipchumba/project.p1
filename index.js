@@ -5,28 +5,35 @@ function newbreed(i) {
     req.send();
 
     let y = i + 10;
-    console.log(y);
     req.addEventListener("load", function (event) {
         var data = JSON.parse(event.target.responseText)
-        console.log(i)
         $("#output").html("");
+
+        // loop through the array
         data.forEach(function (val) {
 
             if (i < y) {
                 let new_div = document.createElement("div")
-                new_div.id = "div1";
-
                 let ulist = document.createElement("ul")
-                ulist.id = "ullist"
-                new_div.appendChild(ulist)
                 let image = document.createElement("img")
+                let item = document.createElement("li")
+
+                new_div.id = "div1";
+                ulist.id = "ullist"
+
+                // populate with data 
+                
                 image.setAttribute("src", data[i].image["url"])
                 image.setAttribute("height", "400px")
                 image.setAttribute("width", "400px")
-                new_div.appendChild(image)
-                let item = document.createElement("li")
                 item.innerText = data[i].name;
+
+                // Append items
+                new_div.appendChild(ulist)
+                new_div.appendChild(image)
                 new_div.appendChild(item)
+
+
                 let item2 = document.createElement("li")
                 item2.innerText = "Life span: " + data[i].life_span;
                 new_div.appendChild(item2)
