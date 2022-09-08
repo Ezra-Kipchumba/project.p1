@@ -5,7 +5,7 @@ function theSend(){
 
 }
 
-function newbreed(i) {
+function getDogs(i) {
     const output = document.getElementById('output')
     let req = new XMLHttpRequest();
     req.open("get", "https://api.thedogapi.com/v1/breeds")
@@ -40,40 +40,6 @@ function newbreed(i) {
                 new_div.appendChild(image)
                 new_div.appendChild(item)
 
-
-                // let item2 = document.createElement("li")
-                // let item3 = document.createElement("li")
-                // let item4 = document.createElement("li")
-
-                // if (data[i].breed_group === "Working")
-                //     item4.setAttribute("style", "color: red");
-                // else if (data[i].breed_group === "Hound")
-                //     item4.setAttribute("style", "color: blue");
-                // else if (data[i].breed_group === "Toy")
-                //     item4.setAttribute("style", "color: purple");
-                // else if (data[i].breed_group === "Non-Sporting")
-                //     item4.setAttribute("style", "color: yellow");
-                // else if (data[i].breed_group === "Mixed")
-                //     item4.setAttribute("style", "color: brown");
-                // else if (data[i].breed_group === "Terrier")
-                //     item4.setAttribute("style", "color: cyan");
-                // else if (data[i].breed_group === "Sporting")
-                //     item4.setAttribute("style", "color: green");
-                // else if (data[i].breed_group === "Herding")
-                //     item4.setAttribute("style", "color: pink");
-
-                //     // populate with data 
-
-                // item2.innerText = "Life span: " + data[i].life_span;
-                // item3.innerText = data[i].temperament;
-                // item4.innerText = "Breed Group:" + data[i].breed_group
-
-                // // append items
-                // new_div.appendChild(item2)
-                // new_div.appendChild(item3)
-                // new_div.appendChild(item4)
-
-                
                 output.appendChild(new_div)
                 i++;
             }
@@ -88,7 +54,7 @@ let button = document.querySelector(".butt");
 button.addEventListener("click", function (e) {
 
 
-    newbreed(i);
+    getDogs(i);
 
     i = i + 10;
     console.log("success");

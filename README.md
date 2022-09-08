@@ -10,8 +10,7 @@ Dog Parlour Website
 2. [Installation-Requirements] (#what-the-user-has-to-meet)
 3. [Technology-Used] (#Explains-the-tools-used)
 4. [Reference] (#Other-check-outs)
-5. [Licence] (#Data-protection)
-6. [Authors-Info] (#About)
+5. [Authors-Info] (#About)
 
 ## Description
 
@@ -39,8 +38,9 @@ This project was on a Dog store website that displays different breeds of dogs a
 
 * W3 Schools,JS tutorials
 * CSS tricks
-* Youtube code with Mosh
+* Youtube code with Mosh , Webdev simplified
 
 ## Authors Info
 
 Slack Profile - [Ezra Kipchumba]
+LinkedIn profile - [Ezra Kipchumba]
