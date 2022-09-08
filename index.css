@@ -13,6 +13,12 @@ body {
     /* margin-bottom: 2px; */
     /* font-weight: 700; */
 }
+h1{
+    color: rgb(210, 224, 233);
+    font-weight: 700;
+    font-size: 62px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .nav {
     display: flex;
