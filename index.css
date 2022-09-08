@@ -142,12 +142,7 @@ a:hover {
         /* justify-content: space-around; */
     }
 
-    #div1 {
-        height: 100%;
-        width: 40%;
-    }
-
-    #div1 #ullist {
+     #ullist {
         display: flex;
         /* flex-wrap: wrap; */
         /* justify-content: space-around */

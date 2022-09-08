@@ -1,3 +1,4 @@
+// forms
 function theSend(){
     const person = document.getElementById("fullname").value;
 
@@ -5,13 +6,14 @@ function theSend(){
 
 }
 
+// get request to the API
 function getDogs(i) {
     const output = document.getElementById('output')
     let req = new XMLHttpRequest();
     req.open("get", "https://api.thedogapi.com/v1/breeds")
     req.send();
 
-    let y = i + 10;
+    let dogs = i + 10;
     req.addEventListener("load", function (event) {
         var data = JSON.parse(event.target.responseText)
         $("#output").html("");
@@ -19,13 +21,13 @@ function getDogs(i) {
         // loop through the array
         data.forEach(function (val) {
 
-            if (i < y) {
-                let new_div = document.createElement("div")
+            if (i < dogs) {
+                let parentDiv = document.createElement("div")
                 let ulist = document.createElement("ul")
                 let image = document.createElement("img")
                 let item = document.createElement("li")
 
-                new_div.id = "div1";
+                parentDiv.id = "innerDiv";
                 ulist.id = "ullist"
 
                 // populate with data 
@@ -36,11 +38,11 @@ function getDogs(i) {
                 item.innerText = data[i].name;
 
                 // Append items
-                new_div.appendChild(ulist)
-                new_div.appendChild(image)
-                new_div.appendChild(item)
+                parentDiv.appendChild(ulist)
+                parentDiv.appendChild(image)
+                parentDiv.appendChild(item)
 
-                output.appendChild(new_div)
+                output.appendChild(parentDiv)
                 i++;
             }
         })
